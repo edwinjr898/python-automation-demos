@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice Estimator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">&#9670;</span>
+        <div>
+          <h1>Invoice Estimator</h1>
+          <p class="tagline">Quick project quotes for freelancers &amp; clients</p>
+        </div>
+      </div>
+      <button type="button" id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+        Toggle theme
+      </button>
+    </header>
+
+    <main class="grid">
+      <section class="card form-card">
+        <h2>Project inputs</h2>
+        <form id="estimateForm" novalidate>
+          <label class="field">
+            <span>Hourly rate ($)</span>
+            <input type="number" id="hourlyRate" name="hourlyRate" min="0" step="0.01" value="85" required />
+          </label>
+          <label class="field">
+            <span>Estimated hours</span>
+            <input type="number" id="hours" name="hours" min="0" step="0.25" value="12" required />
+          </label>
+          <label class="field">
+            <span>Rush fee (%) <em class="optional">optional</em></span>
+            <input type="number" id="rushFee" name="rushFee" min="0" max="100" step="1" value="0" placeholder="0" />
+          </label>
+          <p class="hint">Totals update as you type. No data leaves this page.</p>
+        </form>
+      </section>
+
+      <section class="card result-card">
+        <h2>Estimate</h2>
+        <div class="total-block">
+          <span class="total-label">Estimated total</span>
+          <span class="total-value" id="totalDisplay">$0.00</span>
+        </div>
+        <ul class="breakdown" id="breakdown">
+          <li><span>Base (rate &times; hours)</span><strong id="baseDisplay">$0.00</strong></li>
+          <li><span>Rush fee</span><strong id="rushDisplay">$0.00</strong></li>
+          <li class="divider" aria-hidden="true"></li>
+          <li class="grand"><span>Grand total</span><strong id="grandDisplay">$0.00</strong></li>
+        </ul>
+        <p class="footnote" id="summaryLine">—</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Sample client tool · customize branding, tax, and currency for real projects</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+Sales CSV Cleaning Summary
+========================================
+Rows in:              20
+Rows out:             18
+Duplicates removed:   2
+
+Nulls filled:
+  - customer_name: 1
+  - region: 1
+  - quantity: 2
+  - unit_price: 1
+
+Nulls flagged (left blank):
+  (none)
+
+Notes:
+  - Headers normalized to snake_case
+  - Whitespace trimmed; dates converted to ISO YYYY-MM-DD
+  - Exact duplicate rows dropped
+  - Missing names/regions filled with UNKNOWN
+  - Missing quantity/price filled with medians

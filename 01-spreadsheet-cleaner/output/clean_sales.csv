@@ -1,0 +1,19 @@
+order_id,customer_name,order_date,product,quantity,unit_price,region
+1001,Alice Johnson,2024-01-15,Widget A,2,19.99,North
+1002,Bob Smith,2024-01-16,Widget B,1,29.5,South
+1003,Carol White,2024-01-15,Widget A,3,19.99,East
+1004,Dave Brown,2024-01-17,Widget C,2,45.0,West
+1005,Eve Davis,2024-01-18,Widget B,2,29.5,North
+1006,Frank Miller,2024-01-19,Widget D,1,12.0,South
+1007,UNKNOWN,2024-01-20,Widget A,5,19.99,East
+1008,Grace Lee,2024-01-21,Widget C,2,45.0,West
+1009,Henry Wilson,2024-01-22,Widget B,1,29.5,North
+1010,Ivy Chen,2024-01-23,Widget A,4,19.99,UNKNOWN
+1011,Jack Taylor,2024-01-24,Widget D,3,12.0,South
+1012,Kelly Moore,2024-01-25,Widget C,1,45.0,East
+1013,Liam Scott,2024-01-26,Widget A,2,19.99,West
+1014,Mia Patel,2024-01-27,Widget B,2,29.5,North
+1015,Noah Kim,2024-01-28,Widget D,1,12.0,South
+1016,Olivia Ross,2024-01-29,Widget C,2,45.0,East
+1017,Paul Adams,2024-01-30,Widget A,3,19.99,West
+1018,Quinn Baker,2024-01-31,Widget B,1,29.5,North
